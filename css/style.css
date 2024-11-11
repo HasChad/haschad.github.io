@@ -43,10 +43,7 @@ html {
  */
 
 h1 {
-  display: block;
-  height: 0.25rem;
-  margin: 1em 0;
-  padding-bottom: 1rem;
+  margin: 0;
   color: #f6c177;
   font-size: 1.5rem;
 }
@@ -62,6 +59,8 @@ h2 {
 a {
   color: #eb6f92;
 }
+
+
 
 hr {
   display: block;
@@ -82,6 +81,38 @@ hr {
 
 .project_element:hover {
   background-color: #26233a;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  border: 8px solid yellow;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.left_content {
+  display: flex;
+  border: 8px solid white;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.left_content_icons {
+  
+}
+
+.right_content {
+  display: flex;
+  border: 8px solid white;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
 }
 
 /*

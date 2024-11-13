@@ -65,6 +65,11 @@ hr {
   padding-bottom: 1rem;
 }
 
+ul, li {
+  margin: 10px 0;
+  padding: 0;
+}
+
 .project_element {
   border-radius: 15px;
   padding: 1rem;
@@ -80,14 +85,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: fit-content;
 }
 
 .main {
   font-size:125%;
   display: flex;
   border: 3px solid yellow;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1200px;
+  margin: 0px auto;
 }
 
 .left_content {
@@ -95,7 +102,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   border: 3px solid white;
-  max-width: 50%;
+  max-width: 49%;
 }
 
 .right_content {
@@ -103,13 +110,15 @@ body {
   border: 3px solid white;
   justify-content: center;
   flex-direction: column;
-  max-width: 50%;
-
+  max-width: 49%;
 }
 
 .icons {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
+  align-items: flex-end;
+  
   border: 3px solid white;
 }
 

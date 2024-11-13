@@ -15,10 +15,12 @@
 
 html {
   font-family: "League Spartan", sans-serif;
-  background: radial-gradient(circle, rgba(38,35,58,1) 0%, rgba(25,23,36,1) 35%);
-  color: #e0def4;
-  font-size: 1em;
+  background: radial-gradient(circle, rgba(40,40,40,1) 0%, rgba(29,32,33,1) 30%);
+  color: #a89984; /* ebdbb2 */
   line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
@@ -38,35 +40,26 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-h1 {
-  margin: 0;
-  color: #f6c177;
-  font-size: 1.5rem;
-}
-
 br {
   line-height: 1rem;
 }
 
+h1 {
+  margin: 0;
+  color: #ebdbb2;
+  font-size: 1.5rem;
+}
+
 h2 {
   font-size: 1.25rem;
+  color: #ebdbb2;
 }
-
-a {
-  color: #eb6f92;
-}
-
-
 
 hr {
   display: block;
+  font-size: 1rem;
   height: 1px;
   border: 0;
-  font-size: 1rem;
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding-bottom: 1rem;
@@ -80,40 +73,52 @@ hr {
 }
 
 .project_element:hover {
-  background-color: #26233a;
+  background-color: #3c3836;
 }
 
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main {
+  font-size:125%;
   display: flex;
-  border: 8px solid yellow;
+  border: 3px solid yellow;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .left_content {
   display: flex;
-  border: 8px solid white;
-  justify-content: flex-start;
   flex-direction: column;
-  max-width: 500px;
-}
-
-.left_content_icons {
-  
+  justify-content: flex-start;
+  border: 3px solid white;
+  max-width: 50%;
 }
 
 .right_content {
   display: flex;
-  border: 8px solid white;
+  border: 3px solid white;
   justify-content: center;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 50%;
+
 }
+
+.icons {
+  display: flex;
+  justify-content: center;
+  border: 3px solid white;
+}
+
+.icons a{
+   text-decoration: none;
+   margin-right: 20px;
+}
+
+
 
 /*
  * Remove the gap between audio, canvas, iframes,

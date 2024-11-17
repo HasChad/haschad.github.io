@@ -1,9 +1,14 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('files/MonaspaceNeon-Medium.woff2') format('woff2');
+}
+
 html {
-  font-family: "Iosevka Web";
+  font-family: "Monaspace Neon", monospace;
   font-size: 1rem;
+  font-variant-ligatures: additional-ligatures;
   background: #1d2021;
   color: #bdae93;
-  line-height: 1.3;
 }
 
 ::selection {

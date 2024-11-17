@@ -35,18 +35,22 @@ p {
 }
 
 a {
-  color: #458588;
+  display: inline;
+  color: #d65d0e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #83a598;
+  color: #fe8019;
 }
 
-ul,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   margin: 10px 0;
-  padding: 0;
 }
 
 .project_element {
@@ -56,6 +60,10 @@ li {
 
 .project_element:hover {
   background-color: #282828;
+}
+
+.spacing {
+  margin: 1rem;
 }
 
 body {

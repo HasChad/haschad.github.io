@@ -38,19 +38,19 @@ body {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fbf1c7;
   margin: 0;
 }
 
 h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #ebdbb2;
   margin: 0;
 }
 
 h2 {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: #d79921;
   margin: 0;
 }
@@ -63,6 +63,10 @@ p {
 a {
   color: #d65d0e;
   text-decoration: none;
+}
+
+.link-style {
+  font-size: 0.9rem;
 }
 
 a:hover {

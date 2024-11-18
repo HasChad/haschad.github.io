@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Monaspace Neon';
+  font-family: 'Monaspace';
   src: url('files/MonaspaceNeon-Medium.woff2') format('woff2');
 }
 
 html {
   font-family: "Monaspace Neon", monospace;
-  font-size: 1rem;
-  font-variant-ligatures: additional-ligatures;
+  font-size: 0.9rem;
+  font-weight: 200;
   background: #1d2021;
   color: #bdae93;
 }
@@ -68,7 +68,7 @@ li {
 }
 
 .spacing {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 body {

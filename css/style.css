@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "Monaspace";
-  src: url("files/MonaspaceNeon-Medium.woff2") format("woff2");
-}
-
 html {
-  font-family: "Monaspace Neon", monospace;
+  font-family: "JetBrains Mono", serif;
   font-size: 1rem;
   font-weight: 200;
   background: #1d2021;

@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Monaspace';
-  src: url('files/MonaspaceNeon-Medium.woff2') format('woff2');
+  font-family: "Monaspace";
+  src: url("files/MonaspaceNeon-Medium.woff2") format("woff2");
 }
 
 html {
   font-family: "Monaspace Neon", monospace;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 200;
   background: #1d2021;
   color: #bdae93;
@@ -16,22 +16,48 @@ html {
   text-shadow: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+.spacing {
+  margin: 0.5rem;
+}
+
+.title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 1rem;
+  gap: 10px;
+}
+
 .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #fbf1c7;
   margin: 0;
 }
 
 h1 {
-  margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #ebdbb2;
+  margin: 0;
 }
 
 h2 {
-  font-size: 1.25rem;
-  margin: 0;
+  font-size: 1.15rem;
   color: #d79921;
+  margin: 0;
 }
 
 p {
@@ -40,7 +66,6 @@ p {
 }
 
 a {
-  display: inline;
   color: #d65d0e;
   text-decoration: none;
 }
@@ -56,42 +81,12 @@ ul {
 
 li {
   margin: 10px 0;
-}
-
-.project_element {
   border-radius: 10px;
   padding: 1rem;
 }
 
-.project_element:hover {
+li:hover {
   background-color: #282828;
-}
-
-.spacing {
-  margin: 0.5rem;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0px auto;
-  font-size: 115%;
-  max-width: 1000px;
-  padding: 1rem;
-}
-
-.title-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  font-size: 1rem;
-  gap: 10px;
 }
 
 /*

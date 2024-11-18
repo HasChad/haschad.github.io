@@ -65,12 +65,12 @@ a {
   text-decoration: none;
 }
 
-.link-style {
-  font-size: 0.9rem;
-}
-
 a:hover {
   color: #fe8019;
+}
+
+.link-style {
+  font-size: 0.9rem;
 }
 
 ul {

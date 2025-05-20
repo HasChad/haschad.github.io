@@ -2,12 +2,12 @@ html {
   font-family: "JetBrains Mono", serif;
   font-size: 1rem;
   font-weight: 200;
-  background: #1d2021;
+  background: #191724;
   color: #bdae93;
 }
 
 ::selection {
-  background: #3c3836;
+  background: #524f67;
   text-shadow: none;
 }
 
@@ -19,54 +19,30 @@ body {
   padding: 1rem;
 }
 
-.spacing {
-  margin: 0.5rem;
-}
-
-.title-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  font-size: 1rem;
-  gap: 10px;
-}
-
-.title {
-  font-size: 2rem;
-  color: #fbf1c7;
-  margin: 0;
-}
-
 h1 {
   font-size: 1.2rem;
-  color: #ebdbb2;
+  color: #f6c177;
   margin: 0;
 }
 
 h2 {
   font-size: 1.1rem;
-  color: #d79921;
+  color: #d7827e;
   margin: 0;
 }
 
 p {
-  color: #bdae93;
+  color: #e0def4;
   margin-bottom: 0;
 }
 
 a {
-  color: #d65d0e;
+  color: #d7827e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fe8019;
+  color: #ebbcba;
 }
 
 .link-style {
@@ -85,7 +61,7 @@ li {
 }
 
 li:hover {
-  background-color: #282828;
+  background-color: #26233a;
 }
 
 /*
@@ -124,6 +100,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.spacing {
+  margin: 0.5rem;
+}
+
+.title_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 1rem;
+  gap: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #c4a7e7;
+  margin: 0;
+}
+
+.list_item {
+  display: flex;
+  gap: 20px;
+}
 
 /* ==========================================================================
    Helper classes

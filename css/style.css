@@ -3,7 +3,7 @@ html {
   font-size: 1rem;
   font-weight: 200;
   background: #191724;
-  color: #bdae93;
+  color: #e0def4;
 }
 
 ::selection {
@@ -21,7 +21,8 @@ body {
 
 h1 {
   font-size: 1.2rem;
-  color: #f6c177;
+  font-weight: bold;
+  color: #e0def4;
   margin: 0;
 }
 
@@ -128,6 +129,13 @@ textarea {
 .list_item {
   display: flex;
   gap: 20px;
+}
+
+.list_image {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  align-self: center;
 }
 
 /* ==========================================================================

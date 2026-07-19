@@ -1,0 +1,347 @@
+/* ==========================================================================
+   Design tokens (Rosé Pine)
+   ========================================================================== */
+
+:root {
+    --color-bg: #191724;
+    --color-surface: #1f1d2e;
+    --color-overlay: #26233a;
+    --color-border: #403d52;
+    --color-muted: #6e6a86;
+    --color-subtle: #908caa;
+    --color-text: #e0def4;
+    --color-rose: #eb6f92;
+    --color-rose-hover: #ebbcba;
+    --color-iris: #c4a7e7;
+    --color-gold: #f6c177;
+    --color-teal: #9ccfd8;
+
+    --font-mono:
+        "JetBrains Mono", ui-monospace, "SFMono-Regular", "Courier New",
+        monospace;
+    --radius: 10px;
+    --border: 1px solid var(--color-border);
+    --max-width: 880px;
+}
+
+/* ==========================================================================
+   Reset / base
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 3rem 1.25rem 4rem;
+    line-height: 1.6;
+}
+
+::selection {
+    background: var(--color-overlay);
+    color: var(--color-text);
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+a {
+    color: var(--color-rose);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-rose-hover);
+}
+
+a:focus-visible,
+.cursor {
+    outline: none;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-iris);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0.75rem 0 0;
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: var(--font-mono);
+}
+
+/* ==========================================================================
+   Hero / terminal
+   ========================================================================== */
+
+.terminal {
+    border: var(--border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    overflow: hidden;
+    box-shadow: 0 24px 60px -32px rgba(196, 167, 231, 0.35);
+}
+
+.terminal__bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.6rem 1rem;
+    background: var(--color-overlay);
+    border-bottom: var(--border);
+}
+
+.terminal__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.terminal__dot--red {
+    background: var(--color-rose);
+}
+
+.terminal__dot--yellow {
+    background: var(--color-gold);
+}
+
+.terminal__dot--green {
+    background: var(--color-teal);
+}
+
+.terminal__path {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: var(--color-muted);
+}
+
+.terminal__body {
+    padding: 1.75rem 2rem 2rem;
+}
+
+.line {
+    margin: 1.25rem 0 0;
+}
+
+.line:first-child {
+    margin-top: 0;
+}
+
+.prompt {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+}
+
+.prompt::before {
+    content: "$ ";
+    color: var(--color-teal);
+}
+
+.name {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--color-iris);
+    margin-top: 0.35rem;
+}
+
+.tagline {
+    margin: 0.35rem 0 0;
+    color: var(--color-text);
+}
+
+.tagline .dim {
+    color: var(--color-subtle);
+}
+
+.links {
+    margin-top: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.95rem;
+}
+
+.cursor::after {
+    content: "_";
+    color: var(--color-teal);
+    animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ==========================================================================
+   Section labels
+   ========================================================================== */
+
+.section-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--color-teal);
+    margin: 0 0 1rem;
+}
+
+.section-label::before {
+    content: "// ";
+    color: var(--color-muted);
+}
+
+/* ==========================================================================
+   Projects grid
+   ========================================================================== */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: var(--border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    overflow: hidden;
+    color: var(--color-text);
+    transition:
+        transform 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-iris);
+    color: var(--color-text);
+}
+
+.card__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: var(--color-overlay);
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.1rem 1.25rem;
+    flex: 1;
+}
+
+.card h3 {
+    font-size: 1.05rem;
+    color: var(--color-rose);
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--color-subtle);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+}
+
+.tag--lang {
+    color: var(--color-gold);
+    border-color: rgba(246, 193, 119, 0.4);
+    background: rgba(246, 193, 119, 0.08);
+}
+
+.tag--engine {
+    color: var(--color-teal);
+    border-color: rgba(156, 207, 216, 0.4);
+    background: rgba(156, 207, 216, 0.08);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    border-top: var(--border);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 30em) {
+    body {
+        padding: 2rem 1rem 3rem;
+        gap: 2rem;
+    }
+
+    .terminal__body {
+        padding: 1.25rem 1.25rem 1.5rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+}
+
+/* ==========================================================================
+   Motion & contrast preferences
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor::after {
+        animation: none;
+    }
+
+    .card {
+        transition: none;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "short_name": "HasChad",
+  "name": "HasChad — Portfolio",
+  "icons": [{
+    "src": "files/icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/",
+  "background_color": "#191724",
+  "theme_color": "#191724"
+}

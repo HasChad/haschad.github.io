@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#191724" />
+        <title>HasChad</title>
+
+        <meta
+            name="description"
+            content="Portfolio of HasChad, a Rust game developer and artist building FPS games and rendering engines with Bevy and Macroquad."
+        />
+        <meta property="og:title" content="HasChad" />
+        <meta
+            property="og:description"
+            content="Rust game developer and artist — Bevy, Macroquad, and hand-drawn everything."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://haschad.github.io/" />
+        <meta
+            property="og:image"
+            content="https://haschad.github.io/files/icon.png"
+        />
+        <meta name="twitter:card" content="summary" />
+
+        <link rel="icon" href="files/favicon.ico" sizes="any" />
+        <link rel="icon" href="files/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="files/icon.png" />
+        <link rel="manifest" href="site.webmanifest" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header class="hero">
+            <div class="terminal">
+                <div class="terminal__bar">
+                    <span class="terminal__dot terminal__dot--red"></span>
+                    <span class="terminal__dot terminal__dot--yellow"></span>
+                    <span class="terminal__dot terminal__dot--green"></span>
+                    <span class="terminal__path">~/haschad</span>
+                </div>
+                <div class="terminal__body">
+                    <p class="line"><span class="prompt">whoami</span></p>
+                    <h1 class="name">HasChad</h1>
+                    <p class="tagline">
+                        Digital Craftsman
+                        <span class="dim">— Developer / Artist</span>
+                    </p>
+
+                    <p class="line"><span class="prompt">links --list</span></p>
+                    <div class="links">
+                        <a
+                            href="https://github.com/HasChad"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >[github]</a
+                        >
+
+                        <a
+                            href="https://haschad.itch.io/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >[itch]</a
+                        >
+
+                        <a
+                            href="https://github.com/HasChad/dotfiles"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >[dotfiles]</a
+                        >
+
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="about" aria-labelledby="about-heading">
+                <h2 class="section-label" id="about-heading">about</h2>
+                <p>
+                    I love programming and game development, always chasing new
+                    languages and different engines to build in. Each project
+                    teaches me something and opens up a fresh way to think about
+                    building games. I'm just as into drawing and animation, so I
+                    usually end up making my own sprites and animations too.
+                </p>
+            </section>
+
+            <div style="height: 2rem"></div>
+
+            <section id="projects" aria-labelledby="projects-heading">
+                <h2 class="section-label" id="projects-heading">
+                    selected-projects
+                </h2>
+
+                <ul class="projects">
+                    <li>
+                        <a
+                            class="card"
+                            href="https://github.com/HasChad/bevy-shooting-range"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                class="card__image"
+                                src="https://raw.githubusercontent.com/HasChad/bevy-shooting-range/refs/heads/master/preview.png"
+                                alt="Screenshot of Bevy Shooting Range, a first-person shooting range game"
+                                loading="lazy"
+                            />
+                            <div class="card__body">
+                                <h3>Bevy Shooting Range</h3>
+                                <div class="tags">
+                                    <span class="tag tag--lang">Rust</span>
+                                    <span class="tag tag--engine">Bevy</span>
+                                </div>
+                                <p>
+                                    FPS shooting range built with an agile,
+                                    prototype-first approach — every weapon
+                                    mechanic and animation is mine, aside from
+                                    the gun models. Still under active
+                                    development.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="card"
+                            href="https://github.com/HasChad/first-person-hopper"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                class="card__image"
+                                src="./files/screenshots/first-person-hopper.png"
+                                alt="Screenshot of First Person Hopper, a 2D FPS game"
+                                loading="lazy"
+                            />
+                            <div class="card__body">
+                                <h3>First Person Hopper</h3>
+                                <div class="tags">
+                                    <span class="tag tag--lang">Rust</span>
+                                    <span class="tag tag--engine">Bevy</span>
+                                </div>
+                                <p>
+                                    A 2D FPS made to learn Bevy inside and out,
+                                    inspired by LONEWOLF's "Kick Ups Pistol"
+                                    mode. Every asset, sprites included, is
+                                    hand-drawn.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="card"
+                            href="https://github.com/HasChad/macro-sand"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                class="card__image"
+                                src="https://raw.githubusercontent.com/HasChad/macro-sand/refs/heads/master/macro-sand-preview.gif"
+                                alt="Screenshot of Macro-Sand, a falling sand simulation"
+                                loading="lazy"
+                            />
+                            <div class="card__body">
+                                <h3>Macro-Sand</h3>
+                                <div class="tags">
+                                    <span class="tag tag--lang">Rust</span>
+                                    <span class="tag tag--engine"
+                                        >Macroquad</span
+                                    >
+                                </div>
+                                <p>
+                                    A falling-sand simulation built with the
+                                    lightweight Macroquad library. Still
+                                    evolving toward a longer list of planned
+                                    features.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="card"
+                            href="https://github.com/HasChad/wfc-rails"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                class="card__image"
+                                src="https://raw.githubusercontent.com/HasChad/wfc-rails/refs/heads/master/wfc-rails-preview.gif"
+                                alt="Animated preview of WFC Rails generating a railway"
+                                loading="lazy"
+                            />
+                            <div class="card__body">
+                                <h3>WFC Rails</h3>
+                                <div class="tags">
+                                    <span class="tag tag--lang">Rust</span>
+                                    <span class="tag tag--engine"
+                                        >Macroquad</span
+                                    >
+                                </div>
+                                <p>
+                                    A random railway generator using Wave
+                                    Function Collapse to keep every track
+                                    continuous. Rendered with Macroquad.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="card"
+                            href="https://github.com/HasChad/raycasting-2d"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                class="card__image"
+                                src="https://raw.githubusercontent.com/HasChad/raycasting-2d/refs/heads/master/about/raycastin_2d-preview.gif"
+                                alt="Screenshot of RayCasting 2D demo"
+                                loading="lazy"
+                            />
+                            <div class="card__body">
+                                <h3>RayCasting 2D</h3>
+                                <div class="tags">
+                                    <span class="tag tag--lang">Rust</span>
+                                    <span class="tag tag--engine"
+                                        >Macroquad</span
+                                    >
+                                </div>
+                                <p>
+                                    A minimal 2D ray casting demo, built to
+                                    learn the fundamentals.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="card"
+                            href="https://github.com/HasChad/rust-casting"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                class="card__image"
+                                src="https://raw.githubusercontent.com/HasChad/rust-casting/refs/heads/master/about/rust-casting-preview.gif"
+                                alt="Screenshot of Rust-Casting, a Wolfenstein-style rendering engine"
+                                loading="lazy"
+                            />
+                            <div class="card__body">
+                                <h3>Rust-Casting</h3>
+                                <div class="tags">
+                                    <span class="tag tag--lang">Rust</span>
+                                    <span class="tag tag--engine"
+                                        >Macroquad</span
+                                    >
+                                </div>
+                                <p>
+                                    A Wolfenstein-style 2.5D ray-cast rendering
+                                    engine, built from scratch on Macroquad.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="card"
+                            href="https://github.com/HasChad/cliq"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                class="card__image"
+                                src="https://raw.githubusercontent.com/HasChad/cliq/refs/heads/master/preview.png"
+                                alt="Screenshot of Cliq"
+                                loading="lazy"
+                            />
+                            <div class="card__body">
+                                <h3>Cliq</h3>
+                                <div class="tags">
+                                    <span class="tag tag--lang">Rust</span>
+                                    <span class="tag tag--engine">Ratatui</span>
+                                </div>
+                                <p>
+                                    Terminal-based AI chat client built with
+                                    Ratatui and Groq API.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <a
+                href="https://github.com/HasChad?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Full project archive →</a
+            >
+        </footer>
+    </body>
+</html>

@@ -250,7 +250,7 @@ h3 {
 .card__image {
     width: 100%;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
+    object-fit: contain;
     background: var(--color-overlay);
 }
 
@@ -305,12 +305,25 @@ h3 {
 
 .footer {
     display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
     padding-top: 1.5rem;
     border-top: var(--border);
-    font-size: 0.9rem;
-    font-weight: 700;
+}
+
+.footer .section-label {
+    margin: 0;
+}
+
+.footer a {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-subtle);
+}
+
+.footer a:hover {
+    color: var(--color-rose-hover);
 }
 
 /* ==========================================================================

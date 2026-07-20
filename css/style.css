@@ -189,8 +189,12 @@ h3 {
 }
 
 .cursor::after {
-    content: "_";
-    color: var(--color-teal);
+    content: "";
+    display: inline-block;
+    width: 0.6em;
+    height: 1.4em;
+    background: var(--color-teal);
+    vertical-align: text-bottom;
     animation: blink 1.1s steps(1) infinite;
 }
 
